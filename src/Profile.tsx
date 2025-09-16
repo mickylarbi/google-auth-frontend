@@ -11,10 +11,8 @@ const Profile = () => {
   // const [isLoggedIn, setIsLoggedIn] = useState<boolean>(false);
 
   const handleLogin = () => {
-    setIsLoading(true);
     window.location.href =
       "https://nestjs-passport-tiktok-jwt.onrender.com/auth/tiktok";
-    setIsLoading(false);
   };
 
   const handleLogout = () => {
