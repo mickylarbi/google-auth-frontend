@@ -34,7 +34,7 @@ const Profile = () => {
             setName(res.data.displayName ?? "Authenticated");
             setError(undefined);
           })
-          .catch((err) => {
+          .catch((_) => {
             setError("Unable to log in");
           })
           .finally(() => {
