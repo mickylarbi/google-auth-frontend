@@ -10,7 +10,7 @@ const AuthCallback = () => {
 
     if (token) {
       localStorage.setItem("jwt", token);
-      navigate("/protected");
+      navigate("/profile");
     } else {
       navigate("/");
     }

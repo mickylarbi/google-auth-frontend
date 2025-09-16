@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: 'http://localhost:3000', // your NestJS backend
+    baseURL: 'https://nestjs-passport-tiktok-jwt.onrender.com', // your NestJS backend
 });
 
 api.interceptors.request.use((config) => {

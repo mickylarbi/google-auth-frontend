@@ -1,11 +1,9 @@
-import React from "react";
-
 const LoginButton = () => {
   const handleLogin = () => {
-    window.location.href = "http://localhost:3000/auth/google";
+    window.location.href = "https://nestjs-passport-tiktok-jwt.onrender.com/auth/tiktok";
   };
 
-  return <button onClick={handleLogin}>Login with Google</button>;
+  return <button onClick={handleLogin}>Login with Tiktok</button>;
 };
 
 export default LoginButton;
