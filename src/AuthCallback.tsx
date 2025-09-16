@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { ScaleLoader } from "react-spinners";
 
 const AuthCallback = () => {
   const navigate = useNavigate();
@@ -10,13 +11,11 @@ const AuthCallback = () => {
 
     if (token) {
       localStorage.setItem("jwt", token);
-      navigate("/profile");
-    } else {
       navigate("/");
     }
   }, [navigate]);
 
-  return <p>Processing login...</p>;
+  return <ScaleLoader color="white"/>;
 };
 
 export default AuthCallback;

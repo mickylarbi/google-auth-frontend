@@ -1,18 +1,14 @@
 import "./App.css";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import LoginButton from "./LoginButton";
-import AuthCallback from "./AuthCallback";
+import { Route, Routes } from "react-router-dom";
 import Profile from "./Profile";
+import AuthCallback from "./AuthCallback";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<LoginButton />} />
-        <Route path="/auth/callback" element={<AuthCallback />} />
-        <Route path="/profile" element={<Profile />} />
-      </Routes>
-    </BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Profile />} />
+      <Route path="/auth/callback" element={<AuthCallback />} />
+    </Routes>
   );
 }
 
