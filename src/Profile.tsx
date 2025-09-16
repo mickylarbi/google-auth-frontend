@@ -36,12 +36,11 @@ const Profile = () => {
           })
           .catch((_) => {
             setError("Unable to log in");
-          })
-          .finally(() => {
-            setIsLoading(false);
           });
       }
     }
+
+    setIsLoading(false);
   }, [name]);
 
   return (
