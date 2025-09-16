@@ -38,9 +38,9 @@ const Profile = () => {
             setError("Unable to log in");
           });
       }
+    } else {
+      setIsLoading(false);
     }
-
-    setIsLoading(false);
   }, [name]);
 
   return (
