@@ -14,6 +14,7 @@ const Profile = () => {
     setIsLoading(true);
     window.location.href =
       "https://nestjs-passport-tiktok-jwt.onrender.com/auth/tiktok";
+    setIsLoading(false);
   };
 
   const handleLogout = () => {
